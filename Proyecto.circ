@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.9.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
@@ -26,7 +26,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="main"/>
+  <main name="SUMLAT"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -61,34 +61,42 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="main">
+  <circuit name="SUMLAT">
     <a name="appearance" val="evolution"/>
-    <a name="circuit" val="main"/>
+    <a name="circuit" val="SUMLAT"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(120,220)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="B7"/>
     </comp>
     <comp lib="0" loc="(120,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="B6"/>
     </comp>
     <comp lib="0" loc="(120,260)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="B5"/>
     </comp>
     <comp lib="0" loc="(120,280)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="B4"/>
     </comp>
     <comp lib="0" loc="(120,300)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="B3"/>
     </comp>
     <comp lib="0" loc="(120,320)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="B2"/>
     </comp>
     <comp lib="0" loc="(120,340)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="B1"/>
     </comp>
     <comp lib="0" loc="(120,360)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="B0"/>
     </comp>
     <comp lib="0" loc="(1630,1180)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -96,41 +104,49 @@
     <comp lib="0" loc="(2360,290)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="S7"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2360,310)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="S6"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2360,330)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="S5"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2360,350)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="S4"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2360,370)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="S3"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2360,390)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="S2"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2360,410)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="S1"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2360,430)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="S0"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="5" loc="(170,230)" name="DipSwitch">
@@ -433,9 +449,9 @@
     <wire from="(990,450)" to="(990,620)"/>
     <wire from="(990,620)" to="(1120,620)"/>
   </circuit>
-  <circuit name="LATA">
+  <circuit name="primer_version">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="LATA"/>
+    <a name="circuit" val="primer_version"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(2290,1610)" name="Pin">
