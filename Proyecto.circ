@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+<project source="3.9.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
@@ -390,28 +390,28 @@
       <a name="facing" val="south"/>
       <a name="label" val="S5"/>
     </comp>
-    <comp lib="8" loc="(1120,426)" name="Text">
+    <comp lib="8" loc="(1120,425)" name="Text">
       <a name="text" val="A4B4"/>
     </comp>
-    <comp lib="8" loc="(1392,426)" name="Text">
+    <comp lib="8" loc="(1390,425)" name="Text">
       <a name="text" val="A3B3"/>
     </comp>
-    <comp lib="8" loc="(1662,429)" name="Text">
+    <comp lib="8" loc="(1660,425)" name="Text">
       <a name="text" val="A2B2"/>
     </comp>
-    <comp lib="8" loc="(1935,431)" name="Text">
+    <comp lib="8" loc="(1935,430)" name="Text">
       <a name="text" val="A1B1"/>
     </comp>
-    <comp lib="8" loc="(2204,433)" name="Text">
+    <comp lib="8" loc="(2200,430)" name="Text">
       <a name="text" val="A0B0"/>
     </comp>
-    <comp lib="8" loc="(302,428)" name="Text">
+    <comp lib="8" loc="(300,425)" name="Text">
       <a name="text" val="A7B7"/>
     </comp>
-    <comp lib="8" loc="(573,431)" name="Text">
+    <comp lib="8" loc="(570,430)" name="Text">
       <a name="text" val="A6B6"/>
     </comp>
-    <comp lib="8" loc="(852,432)" name="Text">
+    <comp lib="8" loc="(850,430)" name="Text">
       <a name="text" val="A5B5"/>
     </comp>
     <comp loc="(1080,890)" name="Bloque_B"/>
@@ -1522,7 +1522,7 @@
     <comp lib="1" loc="(420,230)" name="AND Gate"/>
     <comp lib="1" loc="(500,270)" name="OR Gate"/>
     <comp lib="1" loc="(500,390)" name="XOR Gate"/>
-    <comp lib="8" loc="(538,153)" name="Text">
+    <comp lib="8" loc="(535,150)" name="Text">
       <a name="text" val="P0"/>
     </comp>
     <wire from="(200,350)" to="(220,350)"/>
@@ -1693,12 +1693,16 @@
     <a name="circuit" val="prueba_SUMLAT"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(310,610)" name="Constant">
-      <a name="value" val="0xa"/>
+    <comp lib="0" loc="(310,610)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A"/>
+      <a name="radix" val="10unsigned"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(310,690)" name="Constant">
-      <a name="value" val="0xa"/>
+    <comp lib="0" loc="(310,690)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B"/>
+      <a name="radix" val="10unsigned"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(350,610)" name="Splitter">
@@ -1746,19 +1750,11 @@
       <a name="radix" val="10unsigned"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="8" loc="(268,678)" name="Text">
-      <a name="text" val="B"/>
-      <a name="valign" val="top"/>
-    </comp>
-    <comp lib="8" loc="(269,599)" name="Text">
-      <a name="text" val="A"/>
-      <a name="valign" val="top"/>
-    </comp>
-    <comp lib="8" loc="(484,739)" name="Text">
+    <comp lib="8" loc="(480,735)" name="Text">
       <a name="text" val="Como entrada pasamos el valor en decimal y automaticamente se pasa a binario"/>
       <a name="valign" val="top"/>
     </comp>
-    <comp lib="8" loc="(552,771)" name="Text">
+    <comp lib="8" loc="(550,770)" name="Text">
       <a name="text" val="Para ingresarlo hay que ir a las propiedades y en la parte de &quot;Valor&quot; lo ingresamos, lo van a ver en Hexa pero lo ingresan en decimal"/>
       <a name="valign" val="top"/>
     </comp>
