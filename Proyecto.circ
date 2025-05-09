@@ -22,8 +22,8 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#Contador.circ" name="12"/>
-  <lib desc="file#FuncionesF1F2.circ" name="13"/>
+  <lib desc="file#FuncionesF1F2.circ" name="12"/>
+  <lib desc="file#Contador.circ" name="13"/>
   <main name="SUMLAT"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -1962,8 +1962,8 @@
     <comp lib="0" loc="(1500,610)" name="Pin">
       <a name="appearance" val="NewPins"/>
     </comp>
-    <comp lib="0" loc="(230,380)" name="Pin">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(210,380)" name="Constant">
+      <a name="value" val="0x30"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(300,230)" name="Pin">
@@ -1973,9 +1973,8 @@
     <comp lib="0" loc="(380,210)" name="Pin">
       <a name="appearance" val="classic"/>
     </comp>
-    <comp lib="0" loc="(700,700)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="10unsigned"/>
+    <comp lib="0" loc="(700,700)" name="Constant">
+      <a name="value" val="0x3"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(710,270)" name="Splitter">
@@ -2103,7 +2102,7 @@
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="13" loc="(1750,450)" name="Funciones">
+    <comp lib="12" loc="(1750,450)" name="Funciones">
       <a name="labelloc" val="south"/>
     </comp>
     <comp lib="2" loc="(310,360)" name="Multiplexer">
@@ -2113,22 +2112,22 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="Contador"/>
     </comp>
-    <comp lib="8" loc="(1313,49)" name="Text">
+    <comp lib="8" loc="(1310,45)" name="Text">
       <a name="text" val="Aca compruebo si debo aplicar salto (activar load)"/>
     </comp>
-    <comp lib="8" loc="(243,314)" name="Text">
+    <comp lib="8" loc="(240,310)" name="Text">
       <a name="text" val="Si debo saltar, verifico"/>
     </comp>
-    <comp lib="8" loc="(250,333)" name="Text">
-      <a name="text" val="o si es para reiniciar el circuito"/>
-    </comp>
-    <comp lib="8" loc="(252,237)" name="Text">
+    <comp lib="8" loc="(250,235)" name="Text">
       <a name="text" val="Enable"/>
     </comp>
-    <comp lib="8" loc="(294,266)" name="Text">
+    <comp lib="8" loc="(250,330)" name="Text">
+      <a name="text" val="o si es para reiniciar el circuito"/>
+    </comp>
+    <comp lib="8" loc="(290,265)" name="Text">
       <a name="text" val="Clock"/>
     </comp>
-    <comp lib="8" loc="(754,825)" name="Text">
+    <comp lib="8" loc="(750,825)" name="Text">
       <a name="text" val="Siempre le sumo 3 al estado actual por si debo saltar"/>
     </comp>
     <comp loc="(920,630)" name="SUMLAT"/>
@@ -2193,7 +2192,7 @@
     <wire from="(1500,590)" to="(1530,590)"/>
     <wire from="(1500,610)" to="(1530,610)"/>
     <wire from="(1750,360)" to="(1750,450)"/>
-    <wire from="(230,380)" to="(240,380)"/>
+    <wire from="(210,380)" to="(240,380)"/>
     <wire from="(240,370)" to="(240,380)"/>
     <wire from="(240,370)" to="(280,370)"/>
     <wire from="(290,380)" to="(290,870)"/>
