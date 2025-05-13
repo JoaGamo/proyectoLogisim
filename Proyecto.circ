@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.9.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
@@ -257,6 +257,10 @@
       <a name="facing" val="south"/>
       <a name="label" val="B2"/>
     </comp>
+    <comp lib="0" loc="(1550,1100)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="Cin"/>
+    </comp>
     <comp lib="0" loc="(1550,240)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="A2"/>
@@ -291,9 +295,15 @@
       <a name="facing" val="north"/>
       <a name="label" val="S0"/>
     </comp>
-    <comp lib="0" loc="(1640,1180)" name="Pin">
+    <comp lib="0" loc="(1650,160)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="Cin"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="Cout"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1650,160)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="C"/>
     </comp>
     <comp lib="0" loc="(1790,400)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -331,6 +341,10 @@
       <a name="facing" val="south"/>
       <a name="label" val="S0"/>
     </comp>
+    <comp lib="0" loc="(430,390)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="C"/>
+    </comp>
     <comp lib="0" loc="(440,350)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="S7"/>
@@ -354,6 +368,15 @@
     <comp lib="0" loc="(740,240)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="A5"/>
+    </comp>
+    <comp lib="0" loc="(870,160)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="Cin"/>
+    </comp>
+    <comp lib="0" loc="(870,160)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Cin"/>
     </comp>
     <comp lib="0" loc="(910,160)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -484,10 +507,8 @@
     <wire from="(1540,490)" to="(1540,570)"/>
     <wire from="(1540,490)" to="(1550,490)"/>
     <wire from="(1540,570)" to="(1920,570)"/>
-    <wire from="(1550,1150)" to="(1550,1160)"/>
-    <wire from="(1550,1150)" to="(1640,1150)"/>
+    <wire from="(1550,1100)" to="(1550,1160)"/>
     <wire from="(1550,240)" to="(1550,450)"/>
-    <wire from="(1640,1150)" to="(1640,1180)"/>
     <wire from="(1670,630)" to="(1670,660)"/>
     <wire from="(1680,780)" to="(1680,830)"/>
     <wire from="(1680,830)" to="(1990,830)"/>
@@ -574,8 +595,10 @@
     <wire from="(2430,640)" to="(2430,1030)"/>
     <wire from="(2470,550)" to="(2470,800)"/>
     <wire from="(420,450)" to="(450,450)"/>
+    <wire from="(420,470)" to="(430,470)"/>
     <wire from="(420,490)" to="(440,490)"/>
     <wire from="(420,510)" to="(430,510)"/>
+    <wire from="(430,390)" to="(430,470)"/>
     <wire from="(430,510)" to="(430,640)"/>
     <wire from="(430,640)" to="(620,640)"/>
     <wire from="(440,350)" to="(440,490)"/>
@@ -1689,19 +1712,19 @@
     <a name="circuit" val="prueba_SUMLAT"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(310,610)" name="Pin">
+    <comp lib="0" loc="(310,620)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="A"/>
       <a name="radix" val="10unsigned"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(310,690)" name="Pin">
+    <comp lib="0" loc="(310,700)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="B"/>
       <a name="radix" val="10unsigned"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(350,610)" name="Splitter">
+    <comp lib="0" loc="(350,620)" name="Splitter">
       <a name="bit0" val="7"/>
       <a name="bit1" val="6"/>
       <a name="bit2" val="5"/>
@@ -1713,7 +1736,7 @@
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="0" loc="(360,690)" name="Splitter">
+    <comp lib="0" loc="(360,700)" name="Splitter">
       <a name="bit0" val="7"/>
       <a name="bit1" val="6"/>
       <a name="bit2" val="5"/>
@@ -1724,6 +1747,10 @@
       <a name="bit7" val="0"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(560,520)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Cin"/>
     </comp>
     <comp lib="0" loc="(780,520)" name="Splitter">
       <a name="bit0" val="7"/>
@@ -1737,6 +1764,12 @@
       <a name="facing" val="west"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(820,610)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(830,520)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -1755,9 +1788,8 @@
       <a name="valign" val="top"/>
     </comp>
     <comp loc="(680,530)" name="SUMLAT"/>
-    <wire from="(310,610)" to="(350,610)"/>
-    <wire from="(310,690)" to="(360,690)"/>
-    <wire from="(370,530)" to="(580,530)"/>
+    <wire from="(310,620)" to="(350,620)"/>
+    <wire from="(310,700)" to="(360,700)"/>
     <wire from="(370,540)" to="(580,540)"/>
     <wire from="(370,550)" to="(580,550)"/>
     <wire from="(370,560)" to="(580,560)"/>
@@ -1765,7 +1797,7 @@
     <wire from="(370,580)" to="(580,580)"/>
     <wire from="(370,590)" to="(580,590)"/>
     <wire from="(370,600)" to="(580,600)"/>
-    <wire from="(380,610)" to="(580,610)"/>
+    <wire from="(370,610)" to="(580,610)"/>
     <wire from="(380,620)" to="(580,620)"/>
     <wire from="(380,630)" to="(580,630)"/>
     <wire from="(380,640)" to="(580,640)"/>
@@ -1773,6 +1805,10 @@
     <wire from="(380,660)" to="(580,660)"/>
     <wire from="(380,670)" to="(580,670)"/>
     <wire from="(380,680)" to="(580,680)"/>
+    <wire from="(380,690)" to="(580,690)"/>
+    <wire from="(560,520)" to="(570,520)"/>
+    <wire from="(570,520)" to="(570,530)"/>
+    <wire from="(570,530)" to="(580,530)"/>
     <wire from="(680,530)" to="(760,530)"/>
     <wire from="(680,540)" to="(760,540)"/>
     <wire from="(680,550)" to="(760,550)"/>
@@ -1781,6 +1817,7 @@
     <wire from="(680,580)" to="(760,580)"/>
     <wire from="(680,590)" to="(760,590)"/>
     <wire from="(680,600)" to="(760,600)"/>
+    <wire from="(680,610)" to="(820,610)"/>
     <wire from="(780,520)" to="(830,520)"/>
   </circuit>
   <circuit name="Sumador_y_contador">
