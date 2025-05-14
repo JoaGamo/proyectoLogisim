@@ -22,8 +22,8 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#FuncionesF1F2.circ" name="12"/>
-  <lib desc="file#Contador.circ" name="13"/>
+  <lib desc="file#Contador.circ" name="12"/>
+  <lib desc="file#FuncionesF1F2.circ" name="13"/>
   <main name="SUMLAT"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -2049,7 +2049,7 @@
       <a name="label" val="C"/>
     </comp>
     <comp lib="0" loc="(210,380)" name="Constant">
-      <a name="value" val="0x48"/>
+      <a name="value" val="0x30"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(210,80)" name="Pin">
@@ -2087,6 +2087,7 @@
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="south"/>
       <a name="label" val="ESTADO"/>
+      <a name="output" val="true"/>
       <a name="radix" val="10unsigned"/>
       <a name="width" val="8"/>
     </comp>
@@ -2141,7 +2142,7 @@
     <comp lib="0" loc="(800,800)" name="Pin">
       <a name="appearance" val="classic"/>
     </comp>
-    <comp lib="0" loc="(980,710)" name="Splitter">
+    <comp lib="0" loc="(980,700)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="bit0" val="7"/>
       <a name="bit1" val="6"/>
@@ -2261,6 +2262,9 @@
       <a name="label" val="Comparador_48"/>
       <a name="size" val="70"/>
     </comp>
+    <comp lib="1" loc="(1270,690)" name="OR Gate">
+      <a name="facing" val="south"/>
+    </comp>
     <comp lib="1" loc="(1340,60)" name="OR Gate">
       <a name="facing" val="north"/>
       <a name="inputs" val="5"/>
@@ -2275,7 +2279,7 @@
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="12" loc="(1750,450)" name="Funciones">
+    <comp lib="13" loc="(1750,450)" name="Funciones">
       <a name="labelloc" val="south"/>
     </comp>
     <comp lib="2" loc="(310,360)" name="Multiplexer">
@@ -2303,7 +2307,7 @@
     <comp lib="8" loc="(750,825)" name="Text">
       <a name="text" val="Siempre le sumo 3 al estado actual por si debo saltar"/>
     </comp>
-    <comp loc="(920,630)" name="SUMLAT"/>
+    <comp loc="(920,620)" name="SUMLAT"/>
     <wire from="(100,350)" to="(100,850)"/>
     <wire from="(100,350)" to="(280,350)"/>
     <wire from="(100,850)" to="(980,850)"/>
@@ -2349,10 +2353,15 @@
     <wire from="(1240,130)" to="(1280,130)"/>
     <wire from="(1240,220)" to="(1240,230)"/>
     <wire from="(1240,230)" to="(1350,230)"/>
-    <wire from="(1250,550)" to="(1250,870)"/>
+    <wire from="(1250,550)" to="(1250,640)"/>
     <wire from="(1250,550)" to="(1330,550)"/>
+    <wire from="(1250,710)" to="(1250,870)"/>
+    <wire from="(1250,710)" to="(1270,710)"/>
+    <wire from="(1270,690)" to="(1270,710)"/>
     <wire from="(1280,130)" to="(1280,140)"/>
-    <wire from="(1280,140)" to="(1320,140)"/>
+    <wire from="(1280,140)" to="(1290,140)"/>
+    <wire from="(1290,140)" to="(1290,640)"/>
+    <wire from="(1290,140)" to="(1320,140)"/>
     <wire from="(1310,150)" to="(1310,430)"/>
     <wire from="(1310,150)" to="(1330,150)"/>
     <wire from="(1320,130)" to="(1320,140)"/>
@@ -2469,12 +2478,9 @@
     <wire from="(800,250)" to="(800,640)"/>
     <wire from="(800,250)" to="(930,250)"/>
     <wire from="(800,640)" to="(820,640)"/>
-    <wire from="(800,800)" to="(810,800)"/>
     <wire from="(810,260)" to="(810,630)"/>
     <wire from="(810,260)" to="(920,260)"/>
     <wire from="(810,630)" to="(820,630)"/>
-    <wire from="(810,790)" to="(810,800)"/>
-    <wire from="(810,790)" to="(820,790)"/>
     <wire from="(920,260)" to="(1090,260)"/>
     <wire from="(920,260)" to="(920,370)"/>
     <wire from="(920,370)" to="(1080,370)"/>
@@ -2482,6 +2488,7 @@
     <wire from="(920,470)" to="(1090,470)"/>
     <wire from="(920,470)" to="(920,590)"/>
     <wire from="(920,590)" to="(1090,590)"/>
+    <wire from="(920,620)" to="(960,620)"/>
     <wire from="(920,630)" to="(960,630)"/>
     <wire from="(920,640)" to="(960,640)"/>
     <wire from="(920,650)" to="(960,650)"/>
@@ -2489,7 +2496,6 @@
     <wire from="(920,670)" to="(960,670)"/>
     <wire from="(920,680)" to="(960,680)"/>
     <wire from="(920,690)" to="(960,690)"/>
-    <wire from="(920,700)" to="(960,700)"/>
     <wire from="(920,90)" to="(1080,90)"/>
     <wire from="(920,90)" to="(920,260)"/>
     <wire from="(930,100)" to="(1080,100)"/>
@@ -2546,7 +2552,7 @@
     <wire from="(980,400)" to="(1050,400)"/>
     <wire from="(980,400)" to="(980,520)"/>
     <wire from="(980,520)" to="(1120,520)"/>
-    <wire from="(980,710)" to="(980,850)"/>
+    <wire from="(980,700)" to="(980,850)"/>
     <wire from="(990,170)" to="(1080,170)"/>
     <wire from="(990,170)" to="(990,190)"/>
     <wire from="(990,190)" to="(1010,190)"/>
