@@ -23,7 +23,6 @@
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
   <lib desc="file#FuncionesF1F2.circ" name="12"/>
-  <lib desc="file#Contador.circ" name="13"/>
   <main name="SUMLAT"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -1820,153 +1819,6 @@
     <wire from="(680,610)" to="(820,610)"/>
     <wire from="(780,520)" to="(830,520)"/>
   </circuit>
-  <circuit name="Sumador_y_contador">
-    <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Sumador_y_contador"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(1160,130)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1160,170)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1160,210)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1160,250)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1160,290)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1160,330)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1160,370)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1160,90)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(370,350)" name="Clock"/>
-    <comp lib="0" loc="(690,500)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(700,260)" name="Splitter">
-      <a name="bit0" val="7"/>
-      <a name="bit1" val="6"/>
-      <a name="bit2" val="5"/>
-      <a name="bit3" val="4"/>
-      <a name="bit4" val="3"/>
-      <a name="bit5" val="2"/>
-      <a name="bit6" val="1"/>
-      <a name="bit7" val="0"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp lib="0" loc="(780,340)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(780,380)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(890,340)" name="Splitter">
-      <a name="bit0" val="7"/>
-      <a name="bit1" val="6"/>
-      <a name="bit2" val="5"/>
-      <a name="bit3" val="4"/>
-      <a name="bit4" val="3"/>
-      <a name="bit5" val="2"/>
-      <a name="bit6" val="1"/>
-      <a name="bit7" val="0"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp lib="2" loc="(850,350)" name="Multiplexer">
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="3" loc="(770,490)" name="Comparator"/>
-    <comp loc="(1080,180)" name="SUMLAT"/>
-    <wire from="(1080,180)" to="(1110,180)"/>
-    <wire from="(1080,190)" to="(1120,190)"/>
-    <wire from="(1080,200)" to="(1130,200)"/>
-    <wire from="(1080,210)" to="(1160,210)"/>
-    <wire from="(1080,220)" to="(1150,220)"/>
-    <wire from="(1080,230)" to="(1140,230)"/>
-    <wire from="(1080,240)" to="(1130,240)"/>
-    <wire from="(1080,250)" to="(1110,250)"/>
-    <wire from="(1110,250)" to="(1110,370)"/>
-    <wire from="(1110,370)" to="(1160,370)"/>
-    <wire from="(1110,90)" to="(1110,180)"/>
-    <wire from="(1110,90)" to="(1160,90)"/>
-    <wire from="(1120,130)" to="(1120,190)"/>
-    <wire from="(1120,130)" to="(1160,130)"/>
-    <wire from="(1130,170)" to="(1130,200)"/>
-    <wire from="(1130,170)" to="(1160,170)"/>
-    <wire from="(1130,240)" to="(1130,330)"/>
-    <wire from="(1130,330)" to="(1160,330)"/>
-    <wire from="(1140,230)" to="(1140,290)"/>
-    <wire from="(1140,290)" to="(1160,290)"/>
-    <wire from="(1150,220)" to="(1150,250)"/>
-    <wire from="(1150,250)" to="(1160,250)"/>
-    <wire from="(370,350)" to="(460,350)"/>
-    <wire from="(420,290)" to="(420,450)"/>
-    <wire from="(420,290)" to="(460,290)"/>
-    <wire from="(420,450)" to="(790,450)"/>
-    <wire from="(680,290)" to="(690,290)"/>
-    <wire from="(690,260)" to="(690,290)"/>
-    <wire from="(690,260)" to="(700,260)"/>
-    <wire from="(690,290)" to="(690,480)"/>
-    <wire from="(690,480)" to="(730,480)"/>
-    <wire from="(690,500)" to="(730,500)"/>
-    <wire from="(720,180)" to="(980,180)"/>
-    <wire from="(720,190)" to="(980,190)"/>
-    <wire from="(720,200)" to="(980,200)"/>
-    <wire from="(720,210)" to="(980,210)"/>
-    <wire from="(720,220)" to="(980,220)"/>
-    <wire from="(720,230)" to="(980,230)"/>
-    <wire from="(720,240)" to="(980,240)"/>
-    <wire from="(720,250)" to="(980,250)"/>
-    <wire from="(770,480)" to="(790,480)"/>
-    <wire from="(770,490)" to="(830,490)"/>
-    <wire from="(780,340)" to="(820,340)"/>
-    <wire from="(780,380)" to="(800,380)"/>
-    <wire from="(790,450)" to="(790,480)"/>
-    <wire from="(800,360)" to="(800,380)"/>
-    <wire from="(800,360)" to="(820,360)"/>
-    <wire from="(830,370)" to="(830,490)"/>
-    <wire from="(850,350)" to="(890,350)"/>
-    <wire from="(890,340)" to="(890,350)"/>
-    <wire from="(910,260)" to="(980,260)"/>
-    <wire from="(910,270)" to="(980,270)"/>
-    <wire from="(910,280)" to="(980,280)"/>
-    <wire from="(910,290)" to="(980,290)"/>
-    <wire from="(910,300)" to="(980,300)"/>
-    <wire from="(910,310)" to="(980,310)"/>
-    <wire from="(910,320)" to="(980,320)"/>
-    <wire from="(910,330)" to="(980,330)"/>
-    <wire from="(980,230)" to="(980,240)"/>
-  </circuit>
   <circuit name="Contador_1">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Contador_1"/>
@@ -2299,7 +2151,7 @@
     <comp lib="8" loc="(290,265)" name="Text">
       <a name="text" val="Clock"/>
     </comp>
-    <comp lib="8" loc="(767,822)" name="Text">
+    <comp lib="8" loc="(765,820)" name="Text">
       <a name="text" val="Siempre le sumo 3 al estado actual por si debo saltar"/>
     </comp>
     <comp lib="9" loc="(440,690)" name="Binary_to_BCD_converter">
